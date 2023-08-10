@@ -64,8 +64,9 @@ Launch the application using either a physical device or a simulator. Upon launc
 
 #### Screen shots :
 
-<img width="331" alt="Screenshot 2023-08-10 at 01 45 17" src="https://github.com/yvesduke/unsplashApi/assets/8191486/1e02bc69-4edd-412c-b5ae-dec38e5147e3">
+<img width="434" alt="Screenshot 2023-08-10 at 14 43 40" src="https://github.com/yvesduke/unsplashApi/assets/8191486/ef1a3fc0-05eb-4f12-86b9-d02c2e8a9d2f">
 
-<img width="319" alt="Screenshot 2023-08-10 at 01 46 54" src="https://github.com/yvesduke/unsplashApi/assets/8191486/c35e9016-3ed6-466b-bde6-057937def639">
+<img width="434" alt="Screenshot 2023-08-10 at 14 44 30" src="https://github.com/yvesduke/unsplashApi/assets/8191486/756fbd7d-939a-469a-b944-a74b8f2ca747">
+
 
 <img width="1224" alt="CodeCoverage" src="https://github.com/yvesduke/unsplashApi/assets/8191486/28f93469-2c73-47da-a846-4469ad099839">
