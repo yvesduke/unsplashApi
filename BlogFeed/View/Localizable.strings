@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  BlogFeed
+
+  Created by Yves Dukuze on 10/08/2023.
+  
+*/
+
+
+"nav_title" = "Blog Feeds";
+"loading_message" = "Loading...";
+"first_name" = "First Name:";
+"user_name" = "User Name:";
+"total_likes" = "Total Likes:";
+"location" = "Location:";
+"created" = "Created:";
+"description" = "Description";
+"info" = "Info";
+"bio" = "Bio";

@@ -13,7 +13,7 @@ struct FeedListView: View {
     var body: some View {
         NavigationStack{
             listView()
-            .navigationTitle("Blog Feeds")
+                .navigationTitle(NSLocalizedString("nav_title", comment: "Feed List navigation title"))
         }
         .task{
             await viewModel.getFeedList(url: ApiEndpoint.feedAPI)
@@ -37,7 +37,7 @@ struct FeedListView: View {
                     }
                 }
             } else {
-                Text("Loading..")
+                Text(NSLocalizedString("loading_message", comment: ""))
             }
         case .error(message: let message) :
             Text(message)

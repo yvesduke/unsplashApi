@@ -22,13 +22,13 @@ struct FeedDetailView: View {
                 }
                 Divider()
                 Group {
-                    Text("Description")
+                    Text(NSLocalizedString("description", comment: ""))
                         .font(.headline).foregroundColor(.cyan)
                         Text(feed.description?.description ?? "NONE").foregroundColor(.indigo)
-                    Text("Bio")
+                    Text(NSLocalizedString("bio", comment: ""))
                         .font(.headline).foregroundColor(.cyan)
                     Text("\(feed.user.bio ?? "Bio not Available")").foregroundColor(.indigo)
-                    Text("Info")
+                    Text(NSLocalizedString("info", comment: ""))
                         .font(.headline).foregroundColor(.cyan)
                         if let aldDescr = feed.altDescription{
                             Text(aldDescr).foregroundColor(.indigo)
