@@ -12,6 +12,9 @@ It's worth highlighting that, for handling service calls, alternative approaches
 
 #### Quick start :
 
+Xcode Version 14.3.1
+iOS Deployment Target 16.4
+
 Launch the application using either a physical device or a simulator. Upon launching, a horizontally arranged list of Bloggers with their essential personal information will be presented to you. Navigate by scrolling left or right to access the complete blogger list. By clicking on a specific blogger, you will be directed to a detailed page that showcases the blogger's name, photograph, and description.
 
 #### Status :
@@ -64,3 +67,5 @@ Launch the application using either a physical device or a simulator. Upon launc
 <img width="331" alt="Screenshot 2023-08-10 at 01 45 17" src="https://github.com/yvesduke/unsplashApi/assets/8191486/1e02bc69-4edd-412c-b5ae-dec38e5147e3">
 
 <img width="319" alt="Screenshot 2023-08-10 at 01 46 54" src="https://github.com/yvesduke/unsplashApi/assets/8191486/c35e9016-3ed6-466b-bde6-057937def639">
+
+<img width="1224" alt="CodeCoverage" src="https://github.com/yvesduke/unsplashApi/assets/8191486/28f93469-2c73-47da-a846-4469ad099839">
