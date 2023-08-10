@@ -12,13 +12,8 @@ protocol FeedViewModelAction: ObservableObject {
     func getFeedList(url: String) async
 }
 
-enum ViewState {
-    case load(feeds: [Feed])
-    case error(message: String)
-}
-
 final class FeedViewModel {
-    public var feeds: [Feed] = []
+    private var feeds: [Feed] = []
     private let repository: FeedRepositoryContract
     
     @Published var viewState: ViewState = .load(feeds: [])
@@ -39,9 +34,9 @@ extension FeedViewModel: FeedViewModelAction {
             await MainActor.run {
                 viewState = .load(feeds: feeds)
             }
-        } catch let error {
+        } catch {
             await MainActor.run {
-                viewState = .error(message: error.localizedDescription)
+                viewState = .error(message:"Something went wrong, Pls try again")
             }
         }
     }

@@ -32,6 +32,7 @@
 		00DD575C2A84841200A23526 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DD575B2A84841200A23526 /* NetworkManagerTests.swift */; };
 		00DD575F2A84E2DE00A23526 /* FeedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 00DD575E2A84E2DE00A23526 /* FeedResponse.json */; };
 		00DD57612A84F63500A23526 /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DD57602A84F63500A23526 /* FeedViewModelTests.swift */; };
+		00DD57632A85022600A23526 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DD57622A85022600A23526 /* ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		00DD575D2A84E2C800A23526 /* FeedFailedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedFailedResponse.json; sourceTree = "<group>"; };
 		00DD575E2A84E2DE00A23526 /* FeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedResponse.json; sourceTree = "<group>"; };
 		00DD57602A84F63500A23526 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
+		00DD57622A85022600A23526 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				008B6F6C2A8294EE0034CB11 /* FeedViewModel.swift */,
+				00DD57622A85022600A23526 /* ViewState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 		00DD574C2A8482F000A23526 /* ViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				00DD57602A84F63500A23526 /* FeedViewModelTests.swift */,
 				00DD574F2A84834800A23526 /* FakeFeedRepository.swift */,
 			);
 			path = ViewModelTests;
@@ -240,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				00DD57562A8483A600A23526 /* FeedRepositoryTests.swift */,
-				00DD57602A84F63500A23526 /* FeedViewModelTests.swift */,
 			);
 			path = RepositoryTests;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				008B6F802A83BB580034CB11 /* CacheAsyncImage.swift in Sources */,
 				008B6F3D2A8285560034CB11 /* BlogFeedApp.swift in Sources */,
 				008B6F822A83BB730034CB11 /* FeedAsyncImageView.swift in Sources */,
+				00DD57632A85022600A23526 /* ViewState.swift in Sources */,
 				008B6F6F2A8297860034CB11 /* NetworkError.swift in Sources */,
 				008B6F752A82B4390034CB11 /* FeedRepository.swift in Sources */,
 				008B6F712A8299560034CB11 /* ApiEndpoint.swift in Sources */,

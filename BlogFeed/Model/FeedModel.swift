@@ -84,3 +84,9 @@ struct Urls: Decodable {
     let raw, full, regular, small: String
     let thumb, smallS3: String
 }
+
+extension Feed {
+    static func getMockFeed()-> [Feed] {
+        return [Feed(id: "", slug: "", width: 3, height: 3, color: "", blurHash: "", description: "", altDescription: "", urls: Urls(raw: "", full: "", regular: "", small: "", thumb: "", smallS3: ""), links: FeedLinks(html: "", download: "", downloadLocation: ""), likes: 3, likedByUser: false, sponsor: Sponsorship(impressionUrls: [], tagline: "", taglineUrl: "", sponsor: User(id: "", username: "", name: "", firstName: "", lastName: "", twitterUsername: "", portfolioURL: "", bio: "", location: "", links: UserLinks(html: "", photos: "", likes: "", portfolio: "", following: "", followers: ""), profileImage: ProfileImage(small: "", medium: "", large: ""), instagramUsername: "", totalCollections: 3, totalLikes: 3, totalPhotos: 3, acceptedTos: false, forHire: false, social: Social(instagramUsername: "", portfolioURL: "", twitterUsername: ""))), user: User(id: "", username: "", name: "", firstName: "", lastName: "", twitterUsername: "", portfolioURL: "", bio: "", location: "", links: UserLinks(html: "", photos: "", likes: "", portfolio: "", following: "", followers: ""), profileImage: ProfileImage(small: "", medium: "", large: ""), instagramUsername: "", totalCollections: 3, totalLikes: 3, totalPhotos: 3, acceptedTos: false, forHire: false, social: Social(instagramUsername: "", portfolioURL: "", twitterUsername: "")), createdAt: "", updatedAt: "")]
+    }
+}
