@@ -18,7 +18,7 @@ enum ViewState {
 }
 
 final class FeedViewModel {
-    private var feeds: [Feed] = []
+    public var feeds: [Feed] = []
     private let repository: FeedRepositoryContract
     
     @Published var viewState: ViewState = .load(feeds: [])

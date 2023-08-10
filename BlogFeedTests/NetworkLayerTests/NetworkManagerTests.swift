@@ -9,11 +9,8 @@ import XCTest
 @testable import BlogFeed
 
 final class NetworkManagerTests: XCTestCase {
-    /**
-     when api is successfull
-     get function will return expected data , reading data from locally saved json.
-     */
-    func test_get_Employee_list_when_api_is_success() async {
+
+    func test_get_Feed_list_when_api_is_success() async {
         // Reading local json file data
         let bundle = Bundle(for: NetworkManagerTests.self)
         guard let path =  bundle.url(forResource: "FeedResponse", withExtension: "json") else { return }
@@ -25,11 +22,8 @@ final class NetworkManagerTests: XCTestCase {
         let actualData = try! await networkManager.getData(url: url)
         XCTAssertEqual(actualData, data)
     }
-    /**
-     when api is successfull but json parsin fails
-     Fetch function will return jsonParsingFailed exception
-     */
-    func test_get_Employee_list_failes() async {
+
+    func test_get_Feed_list_failes() async {
         let networkManager = NetworkManager(urlSession: NetworkingMock())
         let url = URL(string:"https://www.test.com")!
         
