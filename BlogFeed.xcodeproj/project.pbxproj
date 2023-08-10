@@ -83,6 +83,7 @@
 		00DD575E2A84E2DE00A23526 /* FeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedResponse.json; sourceTree = "<group>"; };
 		00DD57602A84F63500A23526 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
 		00DD57622A85022600A23526 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		00DD57642A850CC000A23526 /* BlogFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlogFeed.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		008B6F302A8285560034CB11 = {
 			isa = PBXGroup;
 			children = (
+				00DD57642A850CC000A23526 /* BlogFeed.xctestplan */,
 				008B6F3B2A8285560034CB11 /* BlogFeed */,
 				008B6F4C2A8285580034CB11 /* BlogFeedTests */,
 				008B6F562A8285580034CB11 /* BlogFeedUITests */,

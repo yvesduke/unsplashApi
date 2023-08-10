@@ -12,30 +12,35 @@ struct FeedListView: View {
     
     var body: some View {
         NavigationStack{
-            switch viewModel.viewState {
-            case .load(feeds: let feeds) :
-                if feeds.count > 0 {
-                    ScrollView(.horizontal){
-                        LazyHStack {
-                            ForEach(feeds){ feed in
-                                NavigationLink {
-                                    FeedDetailView(feed: feed)
-                                } label: {
-                                    FeedCellView(feed: feed)
-                                }
+            listView()
+            .navigationTitle("Blog Feeds")
+        }
+        .task{
+            await viewModel.getFeedList(url: ApiEndpoint.feedAPI)
+        }
+    }
+    
+    @ViewBuilder
+    func listView()-> some View {
+        switch viewModel.viewState {
+        case .load(feeds: let feeds) :
+            if feeds.count > 0 {
+                ScrollView(.horizontal) {
+                    LazyHStack {
+                        ForEach(feeds) { feed in
+                            NavigationLink {
+                                FeedDetailView(feed: feed)
+                            } label: {
+                                FeedCellView(feed: feed)
                             }
                         }
                     }
-                }else{
-                    Text("Loading..")
                 }
-            case .error(message: let message) :
-                Text(message)
+            } else {
+                Text("Loading..")
             }
-        }
-        .navigationTitle(Text("Blog Feeds"))
-        .task{
-            await viewModel.getFeedList(url: ApiEndpoint.feedAPI)
+        case .error(message: let message) :
+            Text(message)
         }
     }
 }

@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "98C038C7-7459-44F1-9346-4699CBB160E1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BlogFeed.xcodeproj",
+      "identifier" : "008B6F382A8285560034CB11",
+      "name" : "BlogFeed"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BlogFeed.xcodeproj",
+        "identifier" : "008B6F482A8285580034CB11",
+        "name" : "BlogFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BlogFeed.xcodeproj",
+        "identifier" : "008B6F522A8285580034CB11",
+        "name" : "BlogFeedUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
